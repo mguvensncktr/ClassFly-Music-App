@@ -17,7 +17,7 @@ const DetailScreen = ({ route, navigation }) => {
             <ImageBackground
                 style={{
                     width: '100%',
-                    height: Platform.OS === 'ios' ? SIZES.height * 0.4 : SIZES.height * 0.6,
+                    height: Platform.OS === 'ios' ? SIZES.height * 0.48 : SIZES.height * 0.6,
                     backgroundColor: COLORS.white
                 }}
                 source={selectedCourse?.imageBg}
@@ -29,7 +29,7 @@ const DetailScreen = ({ route, navigation }) => {
                         justifyContent: 'space-between',
                         alignItems: 'center',
                         marginHorizontal: SIZES.radius,
-                        marginTop: SIZES.padding3,
+                        marginTop: Platform.OS === 'ios' ? 20 : 40,
                     }}
                 >
                     {/* Button */}
@@ -126,10 +126,11 @@ const DetailScreen = ({ route, navigation }) => {
                                             height: 80,
                                             borderRadius: 20,
                                             backgroundColor: index === 1 ? '#FFD051' : COLORS.primary,
-                                            alignItems: 'center'
+                                            alignItems: 'center',
+                                            justifyContent: 'flex-end',
                                         }}
                                     >
-                                        <Image source={mentor.image} resizeMode="contain" style={{ width: 70, height: 70 }} />
+                                        <Image source={mentor.image} resizeMode="contain" style={{ width: 65, height: 65, borderRadius: 10 }} />
                                     </View>
 
                                     {/* Side Divider */}

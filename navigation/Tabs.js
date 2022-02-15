@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from 'react-native';
+import { Image, Platform } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 //screens
@@ -19,7 +19,7 @@ const TabNavigator = () => {
                 tabBarShowLabel: false,
                 tabBarStyle: {
                     backgroundColor: COLORS.secondary,
-                    height: 80,
+                    height: Platform.OS === 'ios' ? 70 : 80,
                     borderTopLeftRadius: 40,
                     borderTopRightRadius: 40,
                 }

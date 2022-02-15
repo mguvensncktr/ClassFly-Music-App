@@ -198,7 +198,15 @@ const HomeScreen = ({ navigation }) => {
                 >
                     <View
                         style={{ flexDirection: 'row', padding: SIZES.padding }}>
-                        <Image source={item.image} resizeMode="contain" style={{ width: 70, height: 70 }} />
+                        {
+                            index === 2
+                                ?
+                                <View style={{ width: 70, height: 70, backgroundColor: COLORS.white, justifyContent: 'center', alignItems: 'center', borderRadius: 60 }}>
+                                    <Image source={item.image} resizeMode="contain" style={{ width: 55, height: 55 }} />
+                                </View>
+                                :
+                                <Image source={item.image} resizeMode="contain" style={{ width: 65, height: 65 }} />
+                        }
                         <View
                             style={{
                                 justifyContent: 'center',
@@ -220,7 +228,7 @@ const HomeScreen = ({ navigation }) => {
                 showsVerticalScrollIndicator={false}
                 keyExtractor={item => `${item.id}`}
                 renderItem={renderItem}
-                contentContainerStyle={{ paddingBottom: SIZES.radius }}
+                contentContainerStyle={{ paddingBottom: 10 }}
             />
         )
     }

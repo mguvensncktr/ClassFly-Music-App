@@ -10,6 +10,11 @@ const piano_bg = require('../assets/images/piano-bg.png');
 const piano = require('../assets/images/piano.png');
 const saxophone = require('../assets/images/saxophone.png');
 const select_bg = require('../assets/images/select-bg.png');
+const violin = require('../assets/images/violin.png');
+const guitar_bg = require('../assets/images/guitar-bg.png');
+const saxophone_bg = require('../assets/images/saxophone-bg.png');
+const drum_bg = require('../assets/images/drum-bg.png');
+const violin_bg = require('../assets/images/violin-bg.png');
 
 export default {
     background,
@@ -23,5 +28,10 @@ export default {
     piano_bg,
     piano,
     saxophone,
-    select_bg
+    select_bg,
+    violin,
+    guitar_bg,
+    saxophone_bg,
+    drum_bg,
+    violin_bg,
 }

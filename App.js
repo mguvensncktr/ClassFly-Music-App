@@ -22,7 +22,7 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName="Landing">
+      <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName="Home">
         <Stack.Screen name="Landing" component={LandingScreen} />
         <Stack.Screen name="Home" component={TabNavigator} />
         <Stack.Screen name="Detail" component={DetailScreen} />

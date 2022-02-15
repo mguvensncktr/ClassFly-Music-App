@@ -59,7 +59,7 @@ const LandingScreen = ({ navigation }) => {
                     <View
                         style={{
                             position: 'absolute',
-                            width: '90%',
+                            width: '85%',
                             height: 250,
                             borderRadius: 40,
                             backgroundColor: COLORS.primary,

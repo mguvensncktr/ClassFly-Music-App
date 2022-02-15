@@ -1,10 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 import { useFonts } from 'expo-font';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 
-import HomeScreen from './screens/HomeScreen';
 import DetailScreen from './screens/DetailScreen';
 import LandingScreen from './screens/LandingScreen';
 import TabNavigator from './navigation/Tabs';
@@ -25,21 +22,11 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName="Landing">
         <Stack.Screen name="Landing" component={LandingScreen} />
         <Stack.Screen name="Home" component={TabNavigator} />
         <Stack.Screen name="Detail" component={DetailScreen} />
       </Stack.Navigator>
-
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

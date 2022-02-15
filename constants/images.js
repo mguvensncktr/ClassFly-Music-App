@@ -9,6 +9,7 @@ const mentor3 = require('../assets/images/mentor3.png');
 const piano_bg = require('../assets/images/piano-bg.png');
 const piano = require('../assets/images/piano.png');
 const saxophone = require('../assets/images/saxophone.png');
+const select_bg = require('../assets/images/select-bg.png');
 
 export default {
     background,
@@ -21,5 +22,6 @@ export default {
     mentor3,
     piano_bg,
     piano,
-    saxophone
+    saxophone,
+    select_bg
 }

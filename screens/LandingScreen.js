@@ -21,19 +21,53 @@ const LandingScreen = ({ navigation }) => {
                     <Text style={{ color: COLORS.black, ...FONTS.body2, fontSize: 28 }}>Find the perfect</Text>
                     <ImageBackground
                         style={{
-                            width: '100%',
+                            width: '90%',
                             height: 35,
                             marginTop: SIZES.padding,
                             justifyContent: 'center',
-                            paddingHorizontal: SIZES.padding,
                         }}
+                        resizeMode="contain"
                         source={images.background}
                     >
-                        <View style={{ flexDirection: 'row' }}>
-                            <Text style={{ ...FONTS.h1, marginRight: SIZES.radius }}>Music</Text>
+                        <View style={{ flexDirection: 'row', marginLeft: 20 }}>
+                            <Text style={{ ...FONTS.h1, marginRight: SIZES.padding2 }}>Music</Text>
                             <Text style={{ ...FONTS.body1 }}>teacher</Text>
                         </View>
                     </ImageBackground>
+                    <Image
+                        source={images.music2}
+                        resizeMode="contain"
+                        style={{
+                            width: 90,
+                            height: 90,
+                            position: 'absolute',
+                            top: 150,
+                            left: 20
+                        }}
+                    />
+                    <Image
+                        source={images.music1}
+                        resizeMode="contain"
+                        style={{
+                            width: 90,
+                            height: 90,
+                            position: 'absolute',
+                            top: 110,
+                            right: 20
+                        }}
+                    />
+                    <View
+                        style={{
+                            position: 'absolute',
+                            width: '90%',
+                            height: 250,
+                            borderRadius: 40,
+                            backgroundColor: COLORS.primary,
+                            top: 200,
+                            right: -20,
+                            transform: [{ rotate: '-15deg' }]
+                        }}
+                    />
                 </View>
                 <Text style={{ marginTop: SIZES.padding, ...FONTS.body3, color: COLORS.lightGray }}>Learn easily different type of music instruments</Text>
             </View>

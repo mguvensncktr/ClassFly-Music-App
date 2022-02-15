@@ -15,6 +15,8 @@ const guitar_bg = require('../assets/images/guitar-bg.png');
 const saxophone_bg = require('../assets/images/saxophone-bg.png');
 const drum_bg = require('../assets/images/drum-bg.png');
 const violin_bg = require('../assets/images/violin-bg.png');
+const music1 = require('../assets/images/music1.png');
+const music2 = require('../assets/images/music2.png');
 
 export default {
     background,
@@ -34,4 +36,6 @@ export default {
     saxophone_bg,
     drum_bg,
     violin_bg,
+    music1,
+    music2
 }

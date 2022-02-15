@@ -104,7 +104,7 @@ const LandingScreen = ({ navigation }) => {
                     position: 'absolute',
                     bottom: 30
                 }}
-                onPress={() => navigation.navigate('Home')}
+                onPress={() => navigation.replace('Home')}
             >
                 <Text style={{ ...FONTS.h4, color: COLORS.white }}>Join now</Text>
             </TouchableOpacity>
